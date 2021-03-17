@@ -10,9 +10,14 @@
   <body>
     <div style="width: 400px;">
       
-      <a-scene>
-        <a-sky src="choppy.mp4" rotation="0 -130 0"></a-sky>
-      </a-scene>
+    <a-scene>
+      <a-assets>
+        <video id="video" src="choppy.mp4"
+               autoplay loop crossorigin></video>
+      </a-assets>
+
+      <a-videosphere src="#video" rotation="0 180 0"></a-videosphere>
+    </a-scene>
 
     </div>
   </body>
